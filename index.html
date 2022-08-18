@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus D. portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+
+<body>
+
+    <!-- EFEITO TESTE 1 -->
+    <hr>
+    <header>
+        <div id="sound">
+            <audio id="myAudio">
+                <source src="./Msc/Bittersweet Symphony (Instrumental).mp3">
+            </audio>
+            <span class="iconify" data-icon="icomoon-free:soundcloud" style="color: white;" data-width="28"></span>
+            <span>Sound</span>
+            <div class="on-off">
+                <span id="off">Off</span>
+                <span id="on">On</span>
+            </div>
+        </div>
+        <div class="btns-container">
+            <i class="fas fa-bars bars"></i>
+            <i class="fas fa-times times"></i>
+        </div>
+    </header>
+
+    <!-- Dark-Mode -->
+    <label for="checkbox" class="toggler">
+        <input type="checkbox" id="checkbox" onclick="myFunction()">
+        <span class="ball"></span>
+        <i class="ri-sun-line sun"></i>
+        <i class="ri-moon-line moon"></i>
+    </label>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+    
+
+    <!-- Seção de texto-->
+    <section id="section-home" class="section-home">
+        <div class="text-zone overlap">
+            <h1>Oi, <br> eu sou
+                Matheus, <br> desenvolvedor WEB
+                <!-- <img src="images/logo.png" alt="">Matheus, <br> desenvolvedor web -->
+            </h1>
+            <p class="gray-text">Desenvolvedor FrontEnd / HTML-CSS-JS / React</p>
+            <br>
+            <!-- button contate-me -->
+            <div id="button">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Contate-me
+                </a>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="container">
+            <div class="navigation">
+                <div class="menu-toggle"></div>
+                <ul class="list">
+                    <li class="list-item active" style="--color:#f44336">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list-item" style="--color:#ffa117">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="alert-outline"></ion-icon>
+                            </span>
+                            <span class="text">Sobre</span>
+                        </a>
+                    </li>
+                    <li class="list-item" style="--color:#0fc70f">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <span class="text">Contato</span>
+                        </a>
+                    </li>
+                    <li class="list-item" style="--color:#2196f3">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="grid-outline"></ion-icon>
+                            </span>
+                            <span class="text">Portfolio</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <!-- Share interaction -->
+        <div class="wrapper">
+            <button class="btn">
+                <i class="ri-share-line"></i>
+            </button>
+            <ul class="list">
+                <li class="item">
+                    <a href="#" class="link ig">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li class="item" style="--d: .25s;">
+                    <a href="#" class="link tw">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                </li>
+                <li class="item" style="--d: .5s;">
+                    <a href="#" class="link sc">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            const btnEl = document.querySelector('.btn');
+
+            const toggleOptions = () => {
+                const wrapperEl = document.querySelector('.wrapper');
+                const iconEl = btnEl.querySelector('i');
+
+                wrapperEl.classList.toggle('active');
+
+                if (iconEl.classList.contains('ri-share-line')) {
+                    iconEl.classList.replace('ri-share-line', 'ri-close-line');
+                } else {
+                    iconEl.classList.replace('ri-close-line', 'ri-share-line');
+                }
+            };
+
+            btnEl.addEventListener('click', toggleOptions);
+        </script>
+    </div>
+
+        <!--  -->
+        <div class="scroll-down">
+            <span>Continue</span>
+            <span class="iconify" data-icon="line-md:chevron-double-down" style="color: white;" data-width="18"></span>
+        </div>
+    </section>
+
+
+    <!-- part 2 starts here  -->
+    <!-- part 2 starts here  -->
+    <!-- part 2 starts here  -->
+    <section id="section-work">
+        <div id="header">
+            <h2>Meu portfolio</h2>
+        </div>
+        <div class="text-zone-2">
+            <div>
+                <p>Uma pequena galeria de projetos recentes escolhidos por mim.
+                    Eu fiz <br>tudo isso junto com pessoas incríveis ao redor do mundo.
+
+
+                    <br>
+                    Interessado em ver mais? Visite <a href="#">meu trabalho</a> página
+                </p>
+            </div>
+            <!-- my portfolio button -->
+            <div id="button">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Contate-me
+                </a>
+            </div>
+        </div>
+        <div class="fake-big-2">Trabalho</div>
+    </section>
+
+    <!-- magical wall section -->
+    <div id="home-magicwall" class="fake-magicwall">
+        <ul>
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Login.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 1 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Card Spotify.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 3 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Login.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 3 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Card Spotify.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 4 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Login.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 5 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Card Spotify.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 6 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Login.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 7 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Card Spotify.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 8 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Login.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 9 -->
+            <li>
+                <div class="magic-wall_item lazyload">
+                    <img src="./Imgs/Card Spotify.gif" alt="image">
+                    <div class="hover-content"></div>
+                    <a href="#" class="colorbox"></a>
+                </div>
+            </li>
+            <!-- magic wall 10 -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+
+    
+
+</body>
+
+</html>

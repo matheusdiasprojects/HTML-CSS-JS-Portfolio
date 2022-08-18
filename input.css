@@ -1,0 +1,54 @@
+.section-contact {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 200px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin: 10px;
+  }
+  
+  /* INPUT - APARÊNCIA DO INPUT */
+  .input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid rgb(0, 0, 0);
+    width: 500px;
+  }
+  
+  /* LABEL - ORGANIZA LOCAL ONDE LABEL FICARA */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+  }
+  
+  /* INPUT/LABEL - EFEITO */
+  .input:focus+.input-label,
+  .input:valid+.input-label {
+    transform: translate(10px, -14px) scale(.0);
+    color: #d1c5fc;
+    padding-inline: 5px;
+    background-color: #242329;
+  }
+  
+  /* INPUT - AO RECEBER FOCO, MUDAR COR DAS BORDAS */
+  .input:is(:focus, :valid) {
+    outline-color: #d1c5fc;
+  }
+  
+  #texto-contato {
+    width: 500px;
+    height: 120px;
+  }
+  
